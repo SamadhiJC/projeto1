@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim</title>
+    <!-- Link para fontes personalizadas do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #f5f5f5, #cce7ff);
+            color: #333;
+        }
+        header {
+            background-color: #0044cc;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            font-family: 'Roboto', sans-serif;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            width: 80%;
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+        .profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #0044cc;
+            margin-bottom: 20px;
+        }
+        .profile h1 {
+            color: #0044cc;
+            font-size: 2em;
+            margin: 10px 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        .profile p {
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 0;
+            text-align: center;
+            color: #555;
+        }
+        .form-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 30px;
+        }
+        .form-section h2 {
+            color: #0044cc;
+            font-family: 'Roboto', sans-serif;
+            margin: 0 0 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        .form-group textarea {
+            /* Tamanho fixo para a área de mensagem */
+            height: 150px; /* Altura fixa */
+            resize: none; /* Impede redimensionamento */
+        }
+        .form-group input[type="submit"] {
+            background-color: #0044cc;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #0033aa;
+        }
+        footer {
+            background-color: #0044cc;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sobre Mim</h1>
+    </header>
+
+    <div class="container">
+        <div class="profile">
+            <img src="img/samadhi.jpg" alt="eu">
+            <h1>Samadhi Jacques</h1>
+            <p>
+                Olá! Sou o Samadhi , um Cozinheiro . Apaixonado por academia,ir a praia, jogar no pc e sair por ai , 
+                tenho experiência na cozinha e estou aprendendo a programar . Sempre em busca de novos desafios e 
+                oportunidades de crescimento tanto pessoal quanto profissional.
+            </p>
+            <p>
+                Se você está interessado(a) em me chamar para programar e que eu possa aprender, entre em contato! Estou animado 
+                para conectar com pessoas e explorar novas possibilidades.
+            </p>
+        </div>
+
+        <div class="form-section">
+            <h2>Entre em Contato</h2>
+            <form action="mailto:seuemail@example.com" method="post" enctype="text/plain">
+                <div class="form-group">
+                    <label for="name">Nome:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Samadhi Jacques . Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+
